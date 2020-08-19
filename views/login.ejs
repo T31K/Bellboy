@@ -1,0 +1,18 @@
+<%- include("./partials/header") %>
+
+
+	
+	<h1 class="default-font text-center mt-3">
+		LOGIN PAGE
+	</h1>
+	
+	<div class="form-center text-center">
+	<form action="/login" method="POST" class="text-center">
+		<input class="form-control mb-2" type="text" name="username" placeholder="username">
+		<input class="form-control mb-2" type="password" name="password" placeholder="password">
+		<input class="btn btn-md btn-secondary" type="submit" value="login">
+	</form>
+
+</div>
+
+<%- include("./partials/footer") %>

@@ -1,0 +1,21 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-lg-12 text-center mt-5 mb-4">
+				<h1>Add New Comment to <%= hotel.name %></h1>
+		</div>
+
+		<div style="width:35%; margin:0 auto">
+
+			<form action="/hotel/<%= hotel._id %>/comments" method="POST">
+				<input class="form-control mb-2" type="text" name="comment[text]" placeholder="Text">
+		
+				<button class="btn btn-primary btn-block mb-2">Submit</button>
+				<button class="btn btn-primary btn-block mb-2" href="/hotel">Back</button>
+			</form>
+		</div>
+	</div>
+</div>
+<%- include("../partials/footer") %>

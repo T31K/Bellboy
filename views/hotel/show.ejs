@@ -1,0 +1,78 @@
+<%- include("../partials/header") %>
+
+
+<div class="container">
+
+<div class="container">
+	<div class="row">
+		 <div class="col-md-3 mt-5">
+	
+			 <div class="list-group">
+				<li class="list-group-item active">Amenities</li>
+				<li class="list-group-item">Wifi-Strength</li>
+				<li class="list-group-item">Gym</li>
+			</div>
+		</div> 
+			<div class="col-md-9">
+				<div class="thumbnail">
+					<img class="img-responsive mt-5 mb-2 rounded" src="<%= hotel.image %>">
+					<div class="figure-caption text-right">
+						<!-- <h4 class="float-right d-block">$9.00/night</h4> -->
+						<h4 class="float-left d-block text-dark font-italic"><%= hotel.name %>
+						</h4>	<h6 class="float-right d-block text-dark font-italic mt-1">
+							Submited by <%= hotel.author.username %>
+						</h6>
+					</div>
+					
+					<div class="d-block">	
+						<p class="d-block mt-5"><%= hotel.description %></p>
+						<p></p>
+						
+						<% if (currentUser && hotel.author.id.equals(currentUser._id)) {  %>
+						<a href="/hotel/<%= hotel._id%>/edit" class="btn btn-lightred btn-sm text-light">Edit Post</a>
+						
+						<form class="deletebtn" action="/hotel/<%= hotel._id %>?_method=DELETE" method="POST">
+							<button class="btn btn-danger btn-sm">Delete Post
+							</button>
+						
+						</form>
+						<% } %>
+					</div>
+					
+					<div class="well">
+						<div class="text-right">
+							<p>	<a class="btn btn-greywhite text-light" href="/hotel/<%= hotel._id %>/comments/new">Add new comment</a></p>
+						</div>
+						
+						<% hotel.comments.forEach(function(comment){ %>
+						<div class="row">
+							<div class="col-md-12 shadow-sm p-3 mb-3 bg-light rounded">
+								
+								<strong><span class="mb-5"><%= comment.author.username %></span></strong>
+								
+					
+								<p>	<%= comment.text%> </p>
+														<% if (currentUser && comment.author.id.equals(currentUser._id)) {  %>
+
+								<a class="btn btn-sm btn-lightred" href="/hotel/<%= hotel._id%>/comments/<%=comment._id%>/edit">Edit</a>
+								<form action="/hotel/<%= hotel._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST" class="deletebtn">
+									<input type="submit" class="btn btn-sm btn-danger" value="Delete">
+								</form>
+								<% } %>
+							</div>
+						</div>
+						<%}) %>
+						
+							</div>
+						</div>
+							
+					</div>
+				</div>
+		</div>
+
+
+
+
+
+
+<%- include("../partials/footer") %>

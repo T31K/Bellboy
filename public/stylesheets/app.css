@@ -1,0 +1,210 @@
+.thumbnail img{
+	width: 100%;	
+}
+
+.thumbnail{
+	padding: 0;
+}
+
+#deletebtn{
+	display: inline;
+}
+
+.deletebtn{
+	display: inline;
+}
+
+carousel-inner .item {
+   height: 400px;
+}
+
+.campr {
+	width: 5em;
+}
+
+.jumbotron{
+    background: url("/src/BG.jpg");
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+	height: auto;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 40%;
+    object-fit: cover; 
+} 
+
+
+btn-readme{
+	width:10px;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 45vh;
+}
+
+.welcome-top {
+    top: ;
+    bottom: auto;
+}
+
+.default-font{
+	font-family: 'Alata', sans-serif;
+	color: #000000;
+}
+
+.default-font-w{
+	font-family: 'Alata', sans-serif;
+	color: #FFFFFF;
+}
+
+a.hover:hover {
+  	color: #f79494;
+}
+
+.form-center{
+	width: 45%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #a72f2f !important;
+}
+
+.btn-lightred, .btn-lightred:hover, .btn-lightred:active, .btn-lightred:visited{
+	background-color: #f79494 !important;
+}
+
+.btn-greywhite, .btn-greywhite:hover, .btn-greywhite:active, .btn-greywhite:visited{
+	background-color: #4f4f4e !important;
+}
+
+.center-pills { 
+	display: inline-block; 
+}
+/* 
+.bg-image-full {
+  background: no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+} */
+
+.bg-image-full{
+-webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+	height: 250px;
+}
+
+body{
+	background: #ee9ca7;
+	background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7); 
+	background: linear-gradient(to top, #ffdde1, #ee9ca7); 
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.navbar-toggler{
+	border: none !important;
+	outline: none !important;
+	box-shadow: none ! important;
+	font-size:22px !important;
+	height: -1px;
+}
+
+.fas, .fa-concierge-bell{
+	color: #8091a0 !important;
+}
+
+
+
+.white-bg{
+  	background-color: #FFFFFF;
+	margin: 5%;
+  	height: 100%;
+  	width: 90%;
+	position: window;
+}	
+
+.navbar {
+    position: relative;
+}
+
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+.fa-concierge-bell{
+	color: black;
+}
+
+@media (max-width: 992px) {
+	.navbar-brand {
+ 		display: none;
+				  }
+}
+
+@media (min-width: 1000px) {
+	.img-fluid {
+		width: 60% !important;
+}
+}
+
+.carousel-item .img-fluid {
+	width:100%;
+	height:100%;
+}
+
+@media (min-width: 992px) {
+	.home {
+  		display: none;	
+ 	}
+	
+	.carousel-item .img-fluid {
+		width:70% !important;
+		height:100%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1600px) {
+	.carousel-item .img-fluid {
+		width:55% !important;
+		height:100%;
+		margin: 0 auto;
+		
+}
+
+.blk{
+	display: block;
+	width: 50em;
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
