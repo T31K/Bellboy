@@ -28,11 +28,12 @@ mongoose.connect(process.env.DATABASEURL,{
 .catch(error => console.log(error.message));
 
 // Package Configs
-app.use(bodyParser.urlencoded({extended: true}));	// BodyParser
-app.set("view engine","ejs");						// EJS
-app.use(express.static(__dirname + "/public")); 	// CSS
-app.use(methodOverride("_method"));					// Method Override
-app.use(flash());									// Connect-flash
+app.use(bodyParser.urlencoded({extended: true}));					// BodyParser
+app.set("view engine","ejs");										// EJS
+app.use(express.static(__dirname + "/public")); 					// CSS
+app.use(methodOverride("_method"));									// Method Override
+app.use(flash());													// Connect-flash
+app.use("/public", express.static('public')); 						// Fav Icon
 
 // Seed Data seedDB();
 
