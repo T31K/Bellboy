@@ -22,11 +22,12 @@ var	commentRoutes		= require("./routes/comments"),
 // console.log(process.env.DATABASEURL);
 
 // MongoDB Config
-mongoose.connect('mongodb+srv://t31k:T31Klegendary@cluster0.ixb//pu.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+// mongoose.connect('mongodb+srv://t31k:yvYxfXFximFKFHAl@cluster0.ixbpu.mongodb.net/bellboy?retryWrites=true&w=majority', {
 // mongoose.connect("mongodb://localhost:27017/yelp_camp",{
 // mongoose.connect("mongodb+srv://t31k:etTVXm7JEc4DxzZ9@cluster0.ixb//pu.mongodb.net/bellboy.hotel?retryWrites=true&w=majority",{
+mongoose.connect(process.env.DATABASEURL,{
 	useNewUrlParser: true,
-	useUnifiedTopology: true,
+	useUnifiedTopology: true
 })
 .then(() => console.log('Connected to DB!'))
 .catch(error => console.log(error.message));
