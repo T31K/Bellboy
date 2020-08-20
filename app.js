@@ -18,7 +18,7 @@ var	commentRoutes		= require("./routes/comments"),
 	hotelRoutes			= require("./routes/hotel"),
 	indexRoutes			= require("./routes/index");
 	
-
+console.log(process.env.DATABASEURL);
 // MongoDB Config
 mongoose.connect(process.env.DATABASEURL,{
 	useNewUrlParser: true,
