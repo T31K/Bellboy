@@ -16,26 +16,25 @@
 			<div class="col-md-9">
 				<div class="thumbnail">
 					<img class="img-responsive mt-5 mb-2 rounded" src="<%= hotel.image %>">
-					<div class="figure-caption text-right">
-						<!-- <h4 class="float-right d-block">$9.00/night</h4> -->
-						<h4 class="float-left d-block text-dark font-italic"><%= hotel.name %>
-						</h4>	<h6 class="float-right d-block text-dark font-italic mt-1">
-							Submited by <%= hotel.author.username %>
-						</h6>
-					</div>
+						<div class="d-block default-font">	
+							<h3 class=" text-dark default-font"><%= hotel.name %></h3>
+						</div>
 					
-					<div class="d-block">	
-						<p class="d-block mt-5"><%= hotel.description %></p>
-						<p></p>
+						<div class="d-block default-font">	
+							<h6 class="d-block text-dark font-italic mt-1"> <%= hotel.author.username %></h6>
+						</div>
 						
-						<% if (currentUser && hotel.author.id.equals(currentUser._id)) {  %>
-						<a href="/hotel/<%= hotel._id%>/edit" class="btn btn-lightred btn-sm text-light">Edit Post</a>
+					
+						<div class="d-block">	
+							<p class="d-block mt-5"><%= hotel.description %></p>
 						
-						<form class="deletebtn" action="/hotel/<%= hotel._id %>?_method=DELETE" method="POST">
-							<button class="btn btn-danger btn-sm">Delete Post
-							</button>
+							<% if (currentUser && hotel.author.id.equals(currentUser._id)) {  %>
+							<a href="/hotel/<%= hotel._id%>/edit" class="btn btn-lightred btn-sm text-light">Edit Post</a>
 						
-						</form>
+							<form class="deletebtn" action="/hotel/<%= hotel._id %>?_method=DELETE" method="POST">
+								<button class="btn btn-danger btn-sm">Delete Post</button>
+						
+							</form>
 						<% } %>
 					</div>
 					
