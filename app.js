@@ -19,12 +19,7 @@ var	commentRoutes		= require("./routes/comments"),
 	indexRoutes			= require("./routes/index");
 	
 
-// console.log(process.env.DATABASEURL);
-
 // MongoDB Config
-// mongoose.connect('mongodb+srv://t31k:yvYxfXFximFKFHAl@cluster0.ixbpu.mongodb.net/bellboy?retryWrites=true&w=majority', {
-// mongoose.connect("mongodb://localhost:27017/yelp_camp",{
-// mongoose.connect("mongodb+srv://t31k:etTVXm7JEc4DxzZ9@cluster0.ixb//pu.mongodb.net/bellboy.hotel?retryWrites=true&w=majority",{
 mongoose.connect(process.env.DATABASEURL,{
 	useNewUrlParser: true,
 	useUnifiedTopology: true
@@ -54,7 +49,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
+// Flash Messages
 app.use(function(req, res, next){
 	res.locals.currentUser = req.user;
 	res.locals.error = req.flash("error");
