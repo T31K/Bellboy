@@ -52,10 +52,12 @@
 					
 								<p>	<%= comment.text%> </p>
 														<% if (currentUser && comment.author.id.equals(currentUser._id)) {  %>
-
-								<a class="btn btn-sm btn-lightred" href="/hotel/<%= hotel._id%>/comments/<%=comment._id%>/edit">Edit</a>
-								<form action="/hotel/<%= hotel._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST" class="deletebtn">
-									<input type="submit" class="btn btn-sm btn-danger" value="Delete">
+								
+								<a href="/hotel/<%= hotel._id%>/comments/<%=comment._id%>/edit"><span class="fas fa-edit smallbuttons"></span></a>
+							
+									
+								<form action="/hotel/<%= hotel._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST" class="deletebtn ">
+									<button type="submit" class="fas fa-trash-alt border-0 bg-light deletebtn"></button>
 								</form>
 								<% } %>
 							</div>
