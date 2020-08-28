@@ -1,22 +1,22 @@
 // Packages
-var express 			= require("express"),
-	app 				= express(),
- 	bodyParser 			= require("body-parser"),
-	Hotel	 			= require("./models/hotel"),
-	mongoose			= require('mongoose'),
-	seedDB				= require("./seeds"),
-	flash				= require("connect-flash"),
-	Comment 			= require("./models/comment"),
-	passport			= require("passport"),
-	LocalStrategy		= require("passport-local"),
-	methodOverride		= require("method-override"),
-	User				= require("./models/user");
+const	express 			= require("express"),
+		app 				= express(),
+		bodyParser 			= require("body-parser"),
+		Hotel	 			= require("./models/hotel"),
+		mongoose			= require('mongoose'),
+		seedDB				= require("./seeds"),
+		flash				= require("connect-flash"),
+		Comment 			= require("./models/comment"),
+		passport			= require("passport"),
+		LocalStrategy		= require("passport-local"),
+		methodOverride		= require("method-override"),
+		User				= require("./models/user");
 
 
 // Routes
-var	commentRoutes		= require("./routes/comments"),
-	hotelRoutes			= require("./routes/hotel"),
-	indexRoutes			= require("./routes/index");
+const	commentRoutes		= require("./routes/comments"),
+		hotelRoutes			= require("./routes/hotel"),
+		indexRoutes			= require("./routes/index");
 	
 
 // MongoDB Config

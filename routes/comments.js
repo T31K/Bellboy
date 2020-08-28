@@ -1,8 +1,8 @@
-var express 	= require("express");
-var router		= express.Router();
-var Hotel	 	= require("../models/hotel");
-var Comment 	= require("../models/comment");
-var middleware 	= require("../middleware");
+const 	express 	= require("express");
+ 		router		= express.Router(),
+ 		Hotel	 	= require("../models/hotel"),
+ 		Comment 	= require("../models/comment"),
+		middleware 	= require("../middleware");
 
 
 // Comments - New

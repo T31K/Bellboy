@@ -1,8 +1,8 @@
-var express 	= require("express");
-var	router		= express.Router();
-var Hotel 		= require("../models/hotel");
-var Comment 	= require("../models/comment");
-var middleware 	= require("../middleware");
+const 	express 	= require("express"),
+		router		= express.Router(),
+ 		Hotel 		= require("../models/hotel"),
+		Comment 	= require("../models/comment"),
+		middleware 	= require("../middleware");
 
 // Hotel Routes
 router.get("/hotel", function(req,res){
@@ -17,14 +17,14 @@ router.get("/hotel", function(req,res){
 
 // New Hotel
 router.post("/hotel", middleware.isLoggedIn, function(req,res){
-	var name 	= req.body.name ;
-	var image 	= req.body.image;
-	var desc 	= req.body.description;
-	var author	= {
+	const 	name 	= req.body.name ,
+	 		image 	= req.body.image,
+		 	desc 	= req.body.description;
+	const author	= {
 		id: req.user._id,
 		username: req.user.username
 	}
-	var newHotel = {name: name, image: image, description: desc, author:author};
+	const newHotel = {name: name, image: image, description: desc, author:author};
 	Hotel.create(newHotel, function(err, newlyCreated){
 		if(err){
 			console.log(err)
