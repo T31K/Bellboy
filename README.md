@@ -29,3 +29,8 @@ Install Dependecies:
 ```sh
 $ npm install
 ```
+
+Start App:
+```sh
+$ node app.js
+```
