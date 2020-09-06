@@ -5,7 +5,7 @@ https://bellboy-herokuapp.com
 
 
 
-## Technologies
+## Technologies :computer:
 - JavaScript
 - HTML
 - CSS
@@ -17,13 +17,13 @@ https://bellboy-herokuapp.com
 - Bootstrap 4
 - Heroku
 
-## Experienced based problem solving
+## Experienced based problem solving :bulb:
 - As a flight crew, I have travelled to countless countries and myriad of hotels. Even so, sometimes I've encountered hotels which I've not travelled to.
 This app serves as a tool to flight crews/frequent flyers/leisure travellers alike to get an insider view of hotel rooms, their quirks and how to get the
 most out of them during your stay, long or short.
 
 
-## Approach
+## Approach :page_facing_up:
 - Gather resources and planning technologies required to build app efficiently
 - Plan features and map out how the app will look/function
 - Build app, test & debug
@@ -33,7 +33,7 @@ most out of them during your stay, long or short.
 - Deploy on Heroku & GitHub
 
 
-### For Developers
+### For Developers :wrench:
 Clone the source locally:
 ```sh
 $ git clone https://github.com/T31K/Bellboy
