@@ -2,7 +2,20 @@
 Hotel webapp - reviews/tips &amp; tricks from experts
 
 
-# Technologies
+
+## Technologies
+- JavaScript
+- HTML
+- CSS
+
+- NodeJS
+- ExpressJS
+- ReactJS
+- MongoDB Atlas
+- PassportJS
+- Bootstrap 4
+-
+- Heroku
 
 
 
