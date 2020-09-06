@@ -14,9 +14,22 @@ https://bellboy-herokuapp.com
 - MongoDB Atlas
 - PassportJS
 - Bootstrap 4
--- Heroku
+- Heroku
+
+## Experienced based problem solving
+- As an flight crew, I have travelled to countless countries and myriad of hotels. Even so, sometimes I've encountered hotels which I've not travelled to.
+This app serves as a tool to flight crews/frequent flyers/leisure travellers alike to get an insider view of hotel rooms, their quirks and how to get the
+most out of them during your stay, long or short.
 
 
+## Approach
+- Gather resources and planning technologies required to build app efficiently
+- Plan features and map out how the app will look/function
+- Build app, test & debug
+- Style with approriate and visually cathcing themes
+- Seek feedback from engineer/developer friends 
+- Debug and test additional features
+- Deploy on Heroku & GitHub
 
 
 ### For Developers
