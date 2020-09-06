@@ -1,5 +1,6 @@
 # Bellboy
 Hotel webapp - reviews/tips &amp; tricks from experts
+
 https://bellboy-herokuapp.com
 
 
@@ -17,7 +18,7 @@ https://bellboy-herokuapp.com
 - Heroku
 
 ## Experienced based problem solving
-- As an flight crew, I have travelled to countless countries and myriad of hotels. Even so, sometimes I've encountered hotels which I've not travelled to.
+- As a flight crew, I have travelled to countless countries and myriad of hotels. Even so, sometimes I've encountered hotels which I've not travelled to.
 This app serves as a tool to flight crews/frequent flyers/leisure travellers alike to get an insider view of hotel rooms, their quirks and how to get the
 most out of them during your stay, long or short.
 
