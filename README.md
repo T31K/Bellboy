@@ -24,3 +24,8 @@ Clone the source locally:
 ```sh
 $ git clone https://github.com/T31K/Bellboy
 $ cd Bellboy
+```
+Install Dependecies:
+```sh
+$ npm install
+```
