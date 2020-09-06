@@ -2,4 +2,13 @@
 Hotel webapp - reviews/tips &amp; tricks from experts
 
 
-<h1>hello world</h1>
+# Technologies
+
+
+
+
+### For Developers
+Clone the source locally:
+```sh
+$ git clone https://github.com/T31K/Bellboy
+$ cd Bellboy
