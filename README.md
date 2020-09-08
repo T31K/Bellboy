@@ -11,7 +11,6 @@ https://bellboy-herokuapp.com
 - CSS
 - NodeJS
 - ExpressJS
-- ReactJS
 - MongoDB Atlas
 - PassportJS
 - Bootstrap 4
