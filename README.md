@@ -1,7 +1,6 @@
 # Bellboy
 Hotel webapp - reviews/tips &amp; tricks from experts
-
-https://bellboy-herokuapp.com
+Live @ https://bellboy-herokuapp.com
 
 
 
