@@ -30,6 +30,12 @@ most out of them during your stay, long or short.
 - Debug and test additional features
 - Deploy on Heroku & GitHub
 
+## Features
+- [x] Comments section
+- [x] Responsive Navbar (turns into Bell icon for mobile sizes)
+- [ ] Search
+- [ ] Categorizing hotels
+- [ ] Map location
 
 ### For Developers :wrench:
 Clone the source locally:
