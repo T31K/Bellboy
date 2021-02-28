@@ -1,7 +1,6 @@
 # Bellboy
 Hotel webapp - reviews/tips &amp; tricks from experts
-Live @ https://bellboy-herokuapp.com
-
+Live @ https://bellboy.herokuapp.com
 
 
 ## Technologies :computer:
@@ -39,16 +38,16 @@ most out of them during your stay, long or short.
 
 ### For Developers :wrench:
 Clone the source locally:
-```sh
+```
 $ git clone https://github.com/T31K/Bellboy
 $ cd Bellboy
 ```
 Install Dependecies:
-```sh
-$ npm install
+```
+$ npm i
 ```
 
 Start App:
-```sh
+```
 $ node app.js
 ```
